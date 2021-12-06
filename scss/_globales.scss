@@ -1,0 +1,140 @@
+html{
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: $fuentePrincipal;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+        width: 120rem;
+    }
+}
+
+.contenedor-small{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+        width: 86rem;
+    }
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bgPrimario{
+    background-color: $primario;
+}
+
+.bgSecundario{
+    background-color: $secundario;
+}
+
+.bgTerciario{
+    background-color: $terciario;
+}
+
+.bgBlanco{
+    background-color: $blanco;
+}
+
+.cPrimario{
+    color: $primario;
+}
+
+.cSecundario{
+    color: $secundario;
+}
+
+.cTerciario{
+    color: $terciario;
+}
+
+.cNegro{
+    color: $negro;
+}
+
+.cBlanco{
+    color: $blanco;
+}
+
+.cGris{
+    color: $gris;
+}
+
+.fw400{
+    font-weight: 400;
+}
+
+.fw500{
+    font-weight: 500;
+}
+
+.fw700{
+    font-weight: 700;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.tUppercase{
+    text-transform: uppercase;
+}
+
+.boton{
+    background-color: $secundario;
+    color: $blanco;
+    padding: 1.7rem 5.1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3rem;
+    width: 90%;
+    font-weight: 700;
+    border: none;
+    @media (min-width: 480px) {
+        width: auto;
+    }
+}
+
+.boton:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}

@@ -1,0 +1,224 @@
+//M A I N  -  I N D E X//
+
+.contenedor-descripcion{
+    height: 60rem;
+    position: relative;
+
+    .contenedor-descripcion__contenido{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem;
+        @media (min-width: 601px) {
+            padding: 0 10rem;
+        }
+        @media (min-width: 768px) {
+            padding: 0 15rem;
+        }
+        @media (min-width: 1024px) {
+            padding: 0 30rem;
+        }
+        @media (min-width: 1440px) {
+            padding: 0 50rem;
+        }
+
+        p{
+            margin: 0;
+            @media (min-width: 601px) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+//S E C C I Ó N  -  C O N O C E N O S//
+
+.contenedor-conocenos{
+    margin: 6rem auto;
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20rem;
+    }
+
+    .mision-vision{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contenedor-logros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem auto;
+
+    img{
+        width: 100%;
+        margin: 3rem 0;
+        transition: transform .2s
+    }
+
+    img:hover{
+        transform: scale(1.01);
+    }
+
+    p{
+        padding: 0 2rem;
+    }
+}
+
+//N U E S T R O S  -  P R O G R A M A S//
+
+.nuestros-programas{
+    padding: 10rem 0;
+
+    h2{
+        margin-top: 0;
+    }
+
+    .contenedor-programas{
+        padding: 6rem 6rem;
+        box-shadow: 0px 3px 6px #00000029;
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5rem;
+        }
+    
+        .programas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0;
+    
+            img{
+                height: 10rem;
+            }
+        }
+    }
+}
+
+//N U E S T R O  -  E Q U I P O//
+
+.nuestro-equipo{
+    padding: 6rem 0;
+
+    .contenedor-equipo{
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 6rem;
+        }
+
+        .integrantes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 14.4rem;
+                margin-bottom: -5rem;
+                object-fit: cover;
+                transition: transform .2s
+            }
+        
+            img:hover{
+                transform: scale(1.1);
+            }
+
+            .integrantes__datos{
+                height: 35rem;
+                width: 33rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 3px 6px #00000029;
+                margin-bottom: 4rem;
+
+                .integrantes__datos--lista{
+                    padding: 0 2rem;
+                    
+                    p{
+                        font-size: 1.4rem;
+                        margin: .5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//F O O T E R//
+
+footer{
+
+    .contenedor-footer{
+        padding: 8rem 0;
+        column-gap: 6rem;
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20rem;
+        }
+
+        .contacto-index{
+            margin-bottom: 6rem;
+
+            h2{
+                margin-top: 0;
+            }
+
+            .contacto-index__items{
+                display: flex;
+                align-items: center;
+
+                p{
+                    margin: 1.2rem;
+                }
+            }
+        }
+
+        .contenedor-formulario{
+        
+            fieldset{
+                border: none;
+
+                .contenedor-campos{
+
+                    .campo{
+                        margin-bottom: 1rem;
+
+                        label{
+                            color: $blanco;
+                            text-transform: uppercase;
+                            font-size: 2rem;
+                            margin-bottom: .5rem;
+                            display: block;
+                        }
+
+                        .input-text{
+                            width: 100%;
+                            border: none;   
+                            padding: 1rem;
+                            border-radius: 1.2rem;
+                        }
+                    }
+                }
+
+                .enviar .boton{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

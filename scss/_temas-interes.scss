@@ -1,0 +1,16 @@
+.contenedor-temas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem auto;
+
+    img{
+        width: 100%;
+    }
+
+    a{
+        font-size: 3rem;
+        margin-top: 2.7rem;
+    }
+}
