@@ -46,6 +46,9 @@ p {
 a {
   text-decoration: none; }
 
+img {
+  width: 100%; }
+
 .bgPrimario {
   background-color: #f0e4d8; }
 
@@ -94,8 +97,8 @@ a {
 .boton {
   background-color: #BF3505;
   color: #fff;
-  padding: 1.7rem 5.1rem;
-  font-size: 1.8rem;
+  padding: 1.7rem 2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
   border-radius: 3rem;
@@ -104,7 +107,9 @@ a {
   border: none; }
   @media (min-width: 480px) {
     .boton {
-      width: auto; } }
+      width: auto;
+      font-size: 1.8rem;
+      padding: 1.7rem 5.1rem; } }
 
 .boton:hover {
   cursor: pointer;
@@ -176,6 +181,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .contenedor-conocenos .mision-vision img {
+      width: auto; }
 
 .contenedor-logros {
   display: flex;
@@ -329,7 +336,8 @@ footer .contenedor-footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 58rem;
-  position: relative; }
+  position: relative;
+  margin-bottom: 6rem; }
   .banner-donaciones .banner-donaciones__contenido {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
@@ -348,3 +356,206 @@ footer .contenedor-footer {
     @media (min-width: 1024px) {
       .banner-donaciones .banner-donaciones__contenido h2 {
         font-size: 12rem; } }
+
+.donaciones-titulo {
+  margin: 0 auto;
+  width: auto; }
+  @media (min-width: 1033px) {
+    .donaciones-titulo {
+      width: 80rem; } }
+  .donaciones-titulo h2 {
+    font-size: 3rem; }
+    @media (min-width: 768px) {
+      .donaciones-titulo h2 {
+        font-size: 4rem; } }
+
+.contenedor-acciones {
+  margin-top: 9rem; }
+  @media (min-width: 768px) {
+    .contenedor-acciones {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 5rem; } }
+  .contenedor-acciones .acciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 9rem; }
+    .contenedor-acciones .acciones img {
+      width: 100%; }
+
+.como-donar-contenedor {
+  padding: 6rem 0 10rem 0; }
+  .como-donar-contenedor .contenedor-donacion {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 3.2rem;
+    padding: 8rem 4rem; }
+    .como-donar-contenedor .contenedor-donacion .seccion-donacion {
+      margin-bottom: 4rem; }
+      @media (max-width: 1020px) {
+        .como-donar-contenedor .contenedor-donacion .seccion-donacion {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; } }
+      .como-donar-contenedor .contenedor-donacion .seccion-donacion h3 {
+        text-align: center;
+        margin: 4rem 0;
+        font-size: 2rem; }
+        @media (min-width: 1020px) {
+          .como-donar-contenedor .contenedor-donacion .seccion-donacion h3 {
+            text-align: start; } }
+      .como-donar-contenedor .contenedor-donacion .seccion-donacion h3:first-child {
+        margin-top: 0; }
+      .como-donar-contenedor .contenedor-donacion .seccion-donacion .boton {
+        margin-right: 1.3rem;
+        margin-bottom: 2rem;
+        text-transform: capitalize;
+        border-radius: 0.8rem; }
+  .como-donar-contenedor .contenedor-donacion:last-child {
+    margin-bottom: 0rem; }
+
+.banner-voluntariado {
+  background-image: url(../img/banners/bannerIndex.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58rem;
+  position: relative; }
+  .banner-voluntariado .banner-voluntariado__contenido {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 502px) {
+      .banner-voluntariado .banner-voluntariado__contenido h2 {
+        font-size: 7rem; } }
+    @media (min-width: 768px) {
+      .banner-voluntariado .banner-voluntariado__contenido h2 {
+        font-size: 10rem; } }
+    @media (min-width: 1024px) {
+      .banner-voluntariado .banner-voluntariado__contenido h2 {
+        font-size: 12rem; } }
+
+.contenedor-voluntariado {
+  padding: 8rem 0; }
+  .contenedor-voluntariado h2 {
+    margin-top: 0; }
+  .contenedor-voluntariado p {
+    font-size: 2.5rem;
+    margin: 0 auto;
+    width: auto; }
+    @media (min-width: 1033px) {
+      .contenedor-voluntariado p {
+        width: 80rem; } }
+  .contenedor-voluntariado img {
+    margin-top: 5rem; }
+
+.voluntariado-botonera {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0; }
+  .voluntariado-botonera .boton {
+    margin-bottom: 3rem;
+    border-radius: 0.8rem; }
+
+.banner-contacto {
+  background-image: url(../img/banners/bannerIndex.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58rem;
+  position: relative; }
+  .banner-contacto .banner-contacto__contenido {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 502px) {
+      .banner-contacto .banner-contacto__contenido h2 {
+        font-size: 7rem; } }
+    @media (min-width: 768px) {
+      .banner-contacto .banner-contacto__contenido h2 {
+        font-size: 10rem; } }
+    @media (min-width: 1024px) {
+      .banner-contacto .banner-contacto__contenido h2 {
+        font-size: 12rem; } }
+
+.contenedor-contacto {
+  padding: 10rem 0; }
+  @media (min-width: 1170px) {
+    .contenedor-contacto {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 13rem; } }
+  .contenedor-contacto .contacto-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem; }
+    @media (min-width: 1170px) {
+      .contenedor-contacto .contacto-items {
+        align-items: flex-start; } }
+    .contenedor-contacto .contacto-items h3 {
+      text-align: center; }
+      @media (min-width: 480px) {
+        .contenedor-contacto .contacto-items h3 {
+          text-align: start; } }
+    .contenedor-contacto .contacto-items .contacto-items__iconos {
+      display: flex;
+      align-items: center; }
+      .contenedor-contacto .contacto-items .contacto-items__iconos svg {
+        margin-right: 1.6rem; }
+      .contenedor-contacto .contacto-items .contacto-items__iconos p {
+        line-height: 1.4;
+        text-align: center; }
+        @media (min-width: 480px) {
+          .contenedor-contacto .contacto-items .contacto-items__iconos p {
+            line-height: 0.4;
+            text-align: start; } }
+    .contenedor-contacto .contacto-items .contacto-items__mapa {
+      margin-top: 4rem; }
+  .contenedor-contacto .contacto-formulario h3 {
+    text-align: center; }
+    @media (min-width: 1170px) {
+      .contenedor-contacto .contacto-formulario h3 {
+        text-align: start; } }
+  .contenedor-contacto .contacto-formulario fieldset {
+    border: none; }
+    .contenedor-contacto .contacto-formulario fieldset .contenedor-campos {
+      margin-bottom: 3rem; }
+      .contenedor-contacto .contacto-formulario fieldset .contenedor-campos .campo {
+        margin-bottom: 1rem; }
+        .contenedor-contacto .contacto-formulario fieldset .contenedor-campos .campo label {
+          color: #000;
+          text-transform: uppercase;
+          font-size: 1.4rem;
+          margin-bottom: .5rem;
+          display: block;
+          font-weight: 700; }
+        .contenedor-contacto .contacto-formulario fieldset .contenedor-campos .campo .input-text {
+          width: 100%;
+          border: 0.1rem solid #000;
+          padding: 1rem;
+          border-radius: 1.2rem; }
+    .contenedor-contacto .contacto-formulario fieldset .enviar .boton {
+      width: 100%; }
+      @media (min-width: 1170) {
+        .contenedor-contacto .contacto-formulario fieldset .enviar .boton {
+          width: 50%; } }
+
+.footer-contacto {
+  height: 7rem; }
+  .footer-contacto p {
+    margin: 0 auto; }

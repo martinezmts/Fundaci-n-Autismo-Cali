@@ -1,0 +1,68 @@
+// H E A D E R //
+.banner-voluntariado{
+    background-image: url(../img/banners/bannerIndex.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 58rem;
+    position: relative;
+
+    .banner-voluntariado__contenido{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            @media (min-width: 502px) {
+                font-size: 7rem;
+            }
+            @media (min-width: 768px) {
+                font-size: 10rem;
+            }
+            @media (min-width: 1024px) {
+                font-size: 12rem;
+            }
+        }
+    }
+}
+
+// M A I N //
+.contenedor-voluntariado{
+    padding: 8rem 0;
+
+    h2{
+        margin-top: 0;
+    }
+
+    p{
+        font-size: 2.5rem;
+        margin: 0 auto;
+        width: auto;
+        @media (min-width: 1033px) {
+            width: 80rem;
+        }
+    }
+
+    img{
+        margin-top: 5rem;
+    }
+}
+
+// B O T O N E R A //
+.voluntariado-botonera{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+
+    .boton{
+        margin-bottom: 3rem;
+        border-radius: 0.8rem;
+    }
+}

@@ -58,6 +58,10 @@ a{
     text-decoration: none;
 }
 
+img{
+    width: 100%;
+}
+
 .bgPrimario{
     background-color: $primario;
 }
@@ -121,8 +125,8 @@ a{
 .boton{
     background-color: $secundario;
     color: $blanco;
-    padding: 1.7rem 5.1rem;
-    font-size: 1.8rem;
+    padding: 1.7rem 2rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     text-align: center;
     border-radius: 3rem;
@@ -131,6 +135,8 @@ a{
     border: none;
     @media (min-width: 480px) {
         width: auto;
+        font-size: 1.8rem;
+        padding: 1.7rem 5.1rem;
     }
 }
 
