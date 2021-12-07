@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,51 +12,100 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+    <!--Estilos bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap-utilities.css" />
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" />
     <title>Fundación Autismo Cali</title>
 </head>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Conócenos</a>
-                    <div>
-                        <div><a href="index.html#quienes-somos">¿Quiénes Somos?</a></div>
-                        <div><a href="index.html#mision-vision">Misión/Visión</a></div>
-                        <div><a href="index.html#logros">¿Qué queremos lograr?</a></div>
-                        <div><a href="index.html#nuestros-programas">Nuestros Programas</a></div>
-                        <div><a href="index.html#nuestro-equipo">Nuestro Equipo</a></div>
-                    </div>
-                </li>
-                <li>
-                    <a href="https://calibijou.mitiendanube.com/productos/" target="_blank">Productos</a>
-                    <div>
-                        <div><a href="https://calibijou.mitiendanube.com/ojotas/" target="_blank">Ojotas Bijou</a></div>
-                        <div><a href="https://calibijou.mitiendanube.com/accesorios/" target="_blank">Accesorios</a></div>
-                        <div><a href="https://calibijou.mitiendanube.com/identificadores/" target="_blank">Identificadores</a></div>
-                        <div><a href="https://calibijou.mitiendanube.com/dia-del-amigue/" target="_blank">Conjuntos</a></div>
-                        <div><a href="https://calibijou.mitiendanube.com/pantus-cali/" target="_blank">Pantus Cali</a></div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Talleres</a>
-                    <div>
-                        <div><a href="talleres/galeria-de-actividades.html">Galería de actividades</a></div>
-                        <div><a href="talleres/temas-de-interes.html">Temas de interés</a></div>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Ayudanos</a>
-                    <div>
-                        <div><a href="ayudanos/donaciones.html">Donaciones</a></div>
-                        <div><a href="ayudanos/voluntariado.html">Voluntariado</a></div>
-                    </div>
-                </li>
-                <li>
-                    <a href="contacto/contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-secondary">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand" href="#">CALI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Conócenos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="index.html#quienes-somos">¿Quiénes somos?</a></li>
+                                <li><a class="dropdown-item" href="index.html#mision-vision">Misión/Visión</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="index.html#logros">¿Qué queremos lograr?</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="index.html#nuestros-programas">Nuestros programas</a>
+                                </li>
+                                <li><a class="dropdown-item" href="index.html#nuestro-equipo">Nuestro equipo</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item mx-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://calibijou.mitiendanube.com/productos/"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="https://calibijou.mitiendanube.com/ojotas/">Ojotas
+                                        Bijou</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://calibijou.mitiendanube.com/accesorios/">Accesorios</a></li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="https://calibijou.mitiendanube.com/identificadores/">Identificadores</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://calibijou.mitiendanube.com/dia-del-amigue/">Conjuntos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://calibijou.mitiendanube.com/pantus-cali/">Pantus Cali</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item mx-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Talleres
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="talleres/galeria-de-actividades.html">Galería de
+                                        actividades</a>
+                                </li>
+                                <li><a class="dropdown-item" href="talleres/temas-de-interes.html">Temas de interés</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item mx-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ayúdanos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="ayudanos/donaciones.html">Donaciones</a></li>
+                                <li><a class="dropdown-item" href="ayudanos/voluntariado.html">Voluntariado</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" aria-current="page" href="contacto/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="banner-principal">
             <div class="banner-principal__contenido">
@@ -66,9 +116,13 @@
     </header>
     <main class="contenedor-descripcion bgPrimario" id="quienes-somos">
         <div class="contenedor-descripcion__contenido fw500">
-            <p>En La Fundación Autismo Cali, tenemos como meta de trabajo la <span class="cSecundario tUppercase">inclusión laboral</span> de jóvenes y adultos autistas, lo que impactará en su calidad de vida.</p>
-            <p>A su vez, acompañamos a las familias generando espacios, actividades y oportunidades para abordar distintas problemáticas en relación al autismo.</p>
-            <p>El dinero recaudado de nuestras ventas va destinado a la formación talleres de inclusión laboral para chicos autistas.</p>
+            <p>En La Fundación Autismo Cali, tenemos como meta de trabajo la <span
+                    class="cSecundario tUppercase">inclusión laboral</span> de jóvenes y adultos autistas, lo que
+                impactará en su calidad de vida.</p>
+            <p>A su vez, acompañamos a las familias generando espacios, actividades y oportunidades para abordar
+                distintas problemáticas en relación al autismo.</p>
+            <p>El dinero recaudado de nuestras ventas va destinado a la formación talleres de inclusión laboral para
+                chicos autistas.</p>
         </div>
     </main>
     <section class="contenedor" id="mision-vision">
@@ -76,18 +130,26 @@
             <div class="mision-vision">
                 <img src="img/iconos/logro.svg" alt="Icono Logro">
                 <h3 class="cSecundario">Misión</h3>
-                <p class="centrar-texto">Nuestra misión es generar un espacio amigable para que los jóvenes y adultos autistas puedan desarrollar aptitudes y actitudes en torno al mundo laboral, mejorando su confianza y autoestima</p>
+                <p class="centrar-texto">Nuestra misión es generar un espacio amigable para que los jóvenes y adultos
+                    autistas puedan desarrollar aptitudes y actitudes en torno al mundo laboral, mejorando su confianza
+                    y autoestima</p>
             </div>
             <div class="mision-vision">
                 <img src="img/iconos/corazon.svg" alt="Icono Corazón">
                 <h3 class="cSecundario">Visión</h3>
-                <p class="centrar-texto">Estamos convencidos que cuando los jóvenes se aceptan a sí mismo y se comprenden, mejoran su autoestima, desarrollando un sentimiento bueno de sí. La identidad y la autoestima se convierten en pilares para construir su confianza, mirando al futuro sin miedo, empezando a surgir un deseo, base del proyecto de vida.</p>
+                <p class="centrar-texto">Estamos convencidos que cuando los jóvenes se aceptan a sí mismo y se
+                    comprenden, mejoran su autoestima, desarrollando un sentimiento bueno de sí. La identidad y la
+                    autoestima se convierten en pilares para construir su confianza, mirando al futuro sin miedo,
+                    empezando a surgir un deseo, base del proyecto de vida.</p>
             </div>
         </section>
         <section class="contenedor-logros" id="logros">
             <h2 class="centrar-texto cSecundario">¿Qué queremos lograr?</h2>
             <img src="img/banners/bannerLogros.png" alt="Imagen de Reunión">
-            <p class="centrar-texto">Es nuestra intención poner en acción distintos talleres, organizados como programa, y coordinados por un profesional, para que desde el hacer los jóvenes y adultos autistas desarrollen sus habilidades de interacción social y laboral, detectar sus capacidades, poniéndolos al servicio del protagonismo del presente, de su autoestima y de sus proyectos personales.</p>
+            <p class="centrar-texto">Es nuestra intención poner en acción distintos talleres, organizados como programa,
+                y coordinados por un profesional, para que desde el hacer los jóvenes y adultos autistas desarrollen sus
+                habilidades de interacción social y laboral, detectar sus capacidades, poniéndolos al servicio del
+                protagonismo del presente, de su autoestima y de sus proyectos personales.</p>
         </section>
     </section>
     <section class="nuestros-programas bgPrimario" id="nuestros-programas">
@@ -97,20 +159,27 @@
                 <div class="programas">
                     <img src="img/iconos/trabajoequipo.svg" alt="Icono de Lazo Humano">
                     <h3 class="cSecundario">Grupal</h3>
-                    <p class="centrar-texto">A través de talleres, espacios de creación y desarrollo usando como recurso el arte y las artesanías, en un entorno social y de acuerdo a las necesidades de los distintos autistas.</p>
+                    <p class="centrar-texto">A través de talleres, espacios de creación y desarrollo usando como recurso
+                        el arte y las artesanías, en un entorno social y de acuerdo a las necesidades de los distintos
+                        autistas.</p>
                 </div>
                 <div class="programas">
                     <img src="img/iconos/familia.svg" alt="Icono de Familia">
                     <h3 class="cSecundario">Familiar</h3>
-                    <p class="centrar-texto">Encuentros mensuales coordinados por profesionales para abordar y dar respuesta a las distintas consultas que puedan realizar los padres, brindando información, contención y asesoramiento.</p>
+                    <p class="centrar-texto">Encuentros mensuales coordinados por profesionales para abordar y dar
+                        respuesta a las distintas consultas que puedan realizar los padres, brindando información,
+                        contención y asesoramiento.</p>
                 </div>
                 <div class="programas">
                     <img src="img/iconos/famoso.svg" alt="Icono de Persona Brillante">
                     <h3 class="cSecundario">Individual</h3>
-                    <p class="centrar-texto">Generando encuentros individuales según los requerimientos de los autistas para dar respuestas a situaciones de conflicto que impacte o perturbe su desarrollo.</p>
+                    <p class="centrar-texto">Generando encuentros individuales según los requerimientos de los autistas
+                        para dar respuestas a situaciones de conflicto que impacte o perturbe su desarrollo.</p>
                 </div>
-            </div> <!--.contenedor-programas-->
-        </div> <!--.contenedor-->
+            </div>
+            <!--.contenedor-programas-->
+        </div>
+        <!--.contenedor-->
     </section>
     <section class="nuestro-equipo" id="nuestro-equipo">
         <h2 class="centrar-texto cSecundario">Nuestro Equipo</h2>
@@ -126,8 +195,10 @@
                             <p>Maestra Normal Superior</p>
                             <p>Docente Jubilada del Sistema Educativo de la Prov. de Buenos Aires</p>
                         </div>
-                    </div><!--.integrantes__datos-->
-                </div><!--.integrantes-->
+                    </div>
+                    <!--.integrantes__datos-->
+                </div>
+                <!--.integrantes-->
                 <div class="integrantes">
                     <img src="img/equipo/maria.png" alt="Foto de María Daniela Pisani Diaz">
                     <div class="integrantes__datos">
@@ -139,19 +210,24 @@
                             <p>Con Conocimientos de Recursos de Diseño Gráfico, Fotografía, y ex Modelo</p>
                             <p>Segundo Idioma: Inglés</p>
                         </div>
-                    </div><!--.integrantes__datos-->
-                </div><!--.integrantes-->
+                    </div>
+                    <!--.integrantes__datos-->
+                </div>
+                <!--.integrantes-->
                 <div class="integrantes">
                     <img src="img/equipo/federico.png" alt="Foto de Federico Iván Skotnica">
                     <div class="integrantes__datos">
                         <h4 class="cGris centrar-texto">Federico Iván Skotnica</h4>
                         <div class="integrantes__datos--lista">
                             <p>Primer Integrante del Grupo de Autistas</p>
-                            <p>Nivel de Estudio: Secundario Completo en Instituto Los Ángeles de Capital Federal, Buenos Aires</p>
+                            <p>Nivel de Estudio: Secundario Completo en Instituto Los Ángeles de Capital Federal, Buenos
+                                Aires</p>
                             <p>26 Años de Edad y con Diagnóstico de Autismo</p>
                         </div>
-                    </div><!--.integrantes__datos-->
-                </div><!--.integrantes-->
+                    </div>
+                    <!--.integrantes__datos-->
+                </div>
+                <!--.integrantes-->
                 <div class="integrantes">
                     <img src="img/equipo/adolfo.png" alt="Foto de Adolfo Ricardo Medina">
                     <div class="integrantes__datos">
@@ -162,9 +238,12 @@
                             <p>Nivel Universitario Incompleto, 5to Año de la Carrera de Cs. Ecónomicas</p>
                             <p>Co-Fundador de la Fundación</p>
                         </div>
-                    </div><!--.integrantes__datos-->
-                </div><!--.integrantes-->
-            </div><!--.contenedor-equipo-->
+                    </div>
+                    <!--.integrantes__datos-->
+                </div>
+                <!--.integrantes-->
+            </div>
+            <!--.contenedor-equipo-->
             <a href="ayudanos/donaciones.html#como-donar" class="boton">Doná Hoy</a>
         </div>
     </section>
@@ -173,31 +252,41 @@
             <div class="contacto-index">
                 <h2 class="cBlanco tUppercase">Contacto</h2>
                 <div class="contacto-index__items">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <rect x="3" y="5" width="18" height="14" rx="2" />
                         <polyline points="3 7 12 13 21 7" />
                     </svg>
                     <p class="cBlanco">patitascali@gmail.com</p>
-                </div> <!--.contacto-index__items-->
+                </div>
+                <!--.contacto-index__items-->
                 <div class="contacto-index__items">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <circle cx="12" cy="11" r="3" />
                         <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                     </svg>
                     <p class="cBlanco">Av. Mitre 6505 piso 6 dpto. F Wilde</p>
-                </div> <!--.contacto-index__items-->
+                </div>
+                <!--.contacto-index__items-->
                 <div class="contacto-index__items">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile"
+                        width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <rect x="7" y="4" width="10" height="16" rx="1" />
                         <line x1="11" y1="5" x2="13" y2="5" />
                         <line x1="12" y1="17" x2="12" y2="17.01" />
                     </svg>
                     <p class="cBlanco">+54 9 1159972010</p>
-                </div> <!--.contacto-index__items-->
-            </div><!--.contacto-index-->
+                </div>
+                <!--.contacto-index__items-->
+            </div>
+            <!--.contacto-index-->
             <div class="contenedor-formulario">
                 <fieldset>
                     <div class="contenedor-campos">
@@ -225,5 +314,13 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="./js/app.js"></script>
+    <!--Script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
